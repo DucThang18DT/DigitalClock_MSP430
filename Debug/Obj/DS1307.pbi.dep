@@ -1,0 +1,8 @@
+DS1307.pbi: E:\Assembly\Projects\MSP430Clang\LCD16x2.h \
+  E:\Assembly\Projects\MSP430Clang\PORT.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.5\430\inc\intrinsics.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.5\430\inc\in430.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.5\430\inc\msp430g2553.h \
+  E:\Assembly\Projects\MSP430Clang\I2C_USCI.h \
+  E:\Assembly\Projects\MSP430Clang\DS1307.h \
+  E:\Assembly\Projects\MSP430Clang\DS1307.cpp

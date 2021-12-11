@@ -1,0 +1,4 @@
+RTC1307.pbi: E:\Assembly\Projects\MSP430Clang\I2CProtocol.h \
+  E:\Assembly\Projects\MSP430Clang\PORT.h \
+  E:\Assembly\Projects\MSP430Clang\RTC1307.h \
+  E:\Assembly\Projects\MSP430Clang\RTC1307.cpp

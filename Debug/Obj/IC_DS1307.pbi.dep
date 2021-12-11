@@ -1,0 +1,4 @@
+IC_DS1307.pbi: E:\Assembly\Projects\MSP430Clang\IC_DS1307.c \
+  E:\Assembly\Projects\MSP430Clang/I2C.h \
+  E:\Assembly\Projects\MSP430Clang/IC_DS1307.h \
+  E:\Assembly\Projects\MSP430Clang/Port.h

@@ -1,0 +1,7 @@
+SENSOR_DHT11.pbi: E:\Assembly\Projects\MSP430Clang\PORT.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.5\430\inc\intrinsics.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.5\430\inc\in430.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.5\430\inc\msp430g2553.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.5\430\inc\msp430.h \
+  E:\Assembly\Projects\MSP430Clang\SENSOR_DHT11.h \
+  E:\Assembly\Projects\MSP430Clang\SENSOR_DHT11.cpp
