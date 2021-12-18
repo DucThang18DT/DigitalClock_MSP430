@@ -38,7 +38,7 @@ void dsInit()
 
 void dsSetTime()
 {
-  unsigned char _time[] = {0x50,0x59,0x23,0x04,0x05,0x06,0x07};
+  unsigned char _time[] = {0x50,0x59,0x23,0x04,0x28,0x02,0x07};
 //  for (int i = 0x00; i < 0x07; i++)
 //  {
 ////    _time[i] = (((_time[i]/10)<<4)+(_time[i]%10))&0x7F;
@@ -53,6 +53,7 @@ void dsSetTime()
   I2C_USCI_Write_Byte(0x04,_time[4]); //
   I2C_USCI_Write_Byte(0x05,_time[5]); //
   I2C_USCI_Write_Byte(0x06,_time[6]);
+  I2C_USCI_Write_Byte(0x07,0x13);
 }
 
 void dsReadTime()

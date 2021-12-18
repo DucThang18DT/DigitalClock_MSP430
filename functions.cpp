@@ -4,7 +4,7 @@
 #include "DS1307.h"
 #include "Clock.h"
 
-volatile static unsigned char _isInterrupt = 0;
+volatile static unsigned char _isInterrupted = 0;
 
 static void init();
 static void showDHT();
@@ -33,25 +33,23 @@ void init(){
   P1_DIR->_BIT.b4 = 0;
   P1_DIR->_BIT.b5 = 0;
   
-//
   P1IE |= BIT3 + BIT2;     //Cho phép ngắt ở P1.3, P1.2
   P1IES |=BIT3 + BIT2;   //Ngắt cạnh xuống,
-  //tức là khi điện áp P1.3 từ 1 ->0 thì xảy ra ngắt
   P1IFG &=~BIT3;           //Xóa cờ ngắt
   P1IFG &=~BIT2;
-  // P1IFG &=~BIT4;
+  
   __bis_SR_register(GIE);
-	Select_Clock(DCO_1MHZ);
-	dsInit();
-//        dsSetTime();
-        LCD_init();
+  Select_Clock(DCO_1MHZ);
+  dsInit();
+  dsSetTime();
+  LCD_init();
 }
 
 #pragma vector = PORT1_VECTOR
 __interrupt void test(void)
 {
-  
-  _isInterrupt = 1;
+  _isInterrupted = 1;
+//  P1IE &= ~ (BIT3 + BIT2);     // Dừng cho phép ngắt ở P1.3, P1.2
   //Kiểm tra ngắt có phải là ở P1.3 không
   if(P1IFG&BIT3)
   {
@@ -63,6 +61,8 @@ __interrupt void test(void)
     showDHT();
     P1IFG &=~BIT2;
   }
+//  P1IE |= BIT3 + BIT2;     //Cho phép ngắt ở P1.3, P1.2
+//  P1IES |=BIT3 + BIT2;
 }
 
 void showDHT()
@@ -76,7 +76,7 @@ void showDHT()
     LCD_showALetter(nhietdo%10 + 48);
 //    LCD_showALetter('°');
     LCD_showALetter(' ');
-    LCD_showALetter('o');
+    LCD_showALetter(223);
     LCD_showALetter('C');
     LCD_showString("Hum : ", 1);
     LCD_showALetter(doam/10 + 48);

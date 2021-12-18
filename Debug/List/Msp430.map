@@ -3,7 +3,7 @@ Warning[w52]: More than one definition for the byte at address 0xffe4 in common 
 #                                                                              #
 #      IAR Universal Linker V6.6.2.104                                         #
 #                                                                              #
-#           Link time     =  11/Dec/2021  17:48:56                             #
+#           Link time     =  17/Dec/2021  17:45:54                             #
 #           Target CPU    =  MSP430                                            #
 #           List file     =  E:\Assembly\Projects\MSP430Clang\Debug\List\Msp43 #
 #                            0.map                                             #
@@ -12,7 +12,7 @@ Warning[w52]: More than one definition for the byte at address 0xffe4 in common 
 #                            Format: ubrof10                                   #
 #                            UBROF version 10.0.6                              #
 #                            Using library modules for C-SPY (-rt)             #
-#           Command line  =  -f C:\Users\DT\AppData\Local\Temp\EW912D.tmp      #
+#           Command line  =  -f C:\Users\DT\AppData\Local\Temp\EW474C.tmp      #
 #                            (E:\Assembly\Projects\MSP430Clang\Debug\Obj\funct #
 #                            ions.r43                                          #
 #                            E:\Assembly\Projects\MSP430Clang\Debug\Obj\LCD16x #
@@ -68,7 +68,7 @@ Warning[w52]: More than one definition for the byte at address 0xffe4 in common 
                 *                                      *
                 ****************************************
 
-       Program entry at :           C0B4  Relocatable, from module : ?cstart
+       Program entry at :           C0BC  Relocatable, from module : ?cstart
 
 
 
@@ -216,29 +216,29 @@ DATA16_Z
            doam                    020D 
     -------------------------------------------------------------------------
 <CODE> 1 (was CODE)
-  Relative segment, address: C9EE - CAE9 (0xfc bytes), align: 1
+  Relative segment, address: C8FA - C9F5 (0xfc bytes), align: 1
   Segment part 35.            Intra module refs:   showDHT()
            LOCAL                   ADDRESS         
            =====                   =======         
            dht_get(unsigned char *, unsigned char *)
-                                   C9EE 
+                                   C8FA 
                calls direct
     -------------------------------------------------------------------------
 <CODE> 1 (was CODE)
-  Relative segment, address: CF98 - CFD3 (0x3c bytes), align: 1
+  Relative segment, address: D050 - D08B (0x3c bytes), align: 1
   Segment part 36.            Intra module refs:   dsReadTime()
            LOCAL                   ADDRESS         
            =====                   =======         
            I2C_USCI_Read_Byte(unsigned char)
-                                   CF98 
+                                   D050 
     -------------------------------------------------------------------------
 <CODE> 1 (was CODE)
-  Relative segment, address: CD56 - CDAD (0x58 bytes), align: 1
+  Relative segment, address: CE2A - CE81 (0x58 bytes), align: 1
   Segment part 37.            Intra module refs:   dsTimeConfig()
            LOCAL                   ADDRESS         
            =====                   =======         
            I2C_USCI_Write_Byte(unsigned char, unsigned char)
-                                   CD56 
+                                   CE2A 
     -------------------------------------------------------------------------
 DATA16_C
   Relative segment, address: C01C - C01F (0x4 bytes), align: 0
@@ -328,60 +328,60 @@ DATA16_Z
            time10                  0215 
     -------------------------------------------------------------------------
 <CODE> 1 (was CODE)
-  Relative segment, address: CBA6 - CC13 (0x6e bytes), align: 1
+  Relative segment, address: CCFC - CD69 (0x6e bytes), align: 1
   Segment part 38.            Intra module refs:   dsTimeConfig()
            LOCAL                   ADDRESS         
            =====                   =======         
-           dsReadTime()            CBA6 
+           dsReadTime()            CCFC 
                calls direct
     -------------------------------------------------------------------------
 <CODE> 1 (was CODE)
-  Relative segment, address: C342 - C5A7 (0x266 bytes), align: 1
+  Relative segment, address: C0E4 - C349 (0x266 bytes), align: 1
   Segment part 41.            Intra module refs:   test()
            LOCAL                   ADDRESS         
            =====                   =======         
-           dsTimeConfig()          C342 
+           dsTimeConfig()          C0E4 
                calls direct
     -------------------------------------------------------------------------
 <CODE> 1 (was CODE)
-  Relative segment, address: CE5C - CEB1 (0x56 bytes), align: 1
+  Relative segment, address: CED8 - CF2D (0x56 bytes), align: 1
   Segment part 39.            Intra module refs:   dsTimeConfig()
            LOCAL                   ADDRESS         
            =====                   =======         
            _maxDayofMonth(unsigned char, unsigned char)
-                                   CE5C 
+                                   CED8 
                calls direct
     -------------------------------------------------------------------------
 <CODE> 1 (was CODE)
-  Relative segment, address: CF04 - CF55 (0x52 bytes), align: 1
+  Relative segment, address: CF2E - CF7F (0x52 bytes), align: 1
   Segment part 40.            Intra module refs:   dsTimeConfig()
            LOCAL                   ADDRESS         
            =====                   =======         
            _weekdays(unsigned char)
-                                   CF04 
+                                   CF2E 
     -------------------------------------------------------------------------
 DATA16_Z
   Relative segment, address: 021C - 021C (0x1 bytes), align: 0
   Segment part 34.            Intra module refs:   test()
            LOCAL                   ADDRESS         
            =====                   =======         
-           _isInterrupt            021C 
+           _isInterrupted          021C 
     -------------------------------------------------------------------------
 <CODE> 1 (was CODE)
-  Relative segment, address: D0A6 - D0D7 (0x32 bytes), align: 1
+  Relative segment, address: D0BE - D0EF (0x32 bytes), align: 1
   Segment part 43.            Intra module refs:   test()::??INTVEC 4
            LOCAL                   ADDRESS         
            =====                   =======         
-           test()                  D0A6 
+           test()                  D0BE 
                interrupt function
                calls direct
     -------------------------------------------------------------------------
 <CODE> 1 (was CODE)
-  Relative segment, address: C7F0 - C8F1 (0x102 bytes), align: 1
+  Relative segment, address: C6F6 - C7F7 (0x102 bytes), align: 1
   Segment part 42.            Intra module refs:   test()
            LOCAL                   ADDRESS         
            =====                   =======         
-           showDHT()               C7F0 
+           showDHT()               C6F6 
                calls direct
     -------------------------------------------------------------------------
 INTVEC
@@ -392,15 +392,15 @@ INTVEC
            test()::??INTVEC 4      FFE4 
     -------------------------------------------------------------------------
 DATA16_ID
-  Relative segment, address: C0A8 - C0A9 (0x2 bytes), align: 1
+  Relative segment, address: C0B0 - C0B1 (0x2 bytes), align: 1
   Segment part 20.            Intra module refs:   P1_DIR
     -------------------------------------------------------------------------
 DATA16_ID
-  Relative segment, address: C0AA - C0AB (0x2 bytes), align: 1
+  Relative segment, address: C0B2 - C0B3 (0x2 bytes), align: 1
   Segment part 22.            Intra module refs:   P1_OUT
     -------------------------------------------------------------------------
 DATA16_ID
-  Relative segment, address: C0AC - C0AD (0x2 bytes), align: 1
+  Relative segment, address: C0B4 - C0B5 (0x2 bytes), align: 1
   Segment part 24.            Intra module refs:   P1_IN
 
     *************************************************************************
@@ -419,7 +419,7 @@ DATA16_AN
            P2OUT                   0029 
     -------------------------------------------------------------------------
 <CODE> 1 (was CODE)
-  Relative segment, address: CCEE - CD55 (0x68 bytes), align: 1
+  Relative segment, address: CD6A - CDD1 (0x68 bytes), align: 1
   Segment part 3.             Intra module refs:   LCD_clear()
                                                    LCD_goto(unsigned char, unsigned char)
                                                    LCD_init()
@@ -427,15 +427,15 @@ DATA16_AN
                                                    LCD_showString(char const *, int)
            ENTRY                   ADDRESS         REF BY
            =====                   =======         ======
-           _send2LCD(char, int)    CCEE 
+           _send2LCD(char, int)    CD6A 
                calls direct
     -------------------------------------------------------------------------
 <CODE> 1 (was CODE)
-  Relative segment, address: D1C6 - D1D5 (0x10 bytes), align: 1
+  Relative segment, address: D25E - D26D (0x10 bytes), align: 1
   Segment part 5.             Intra module refs:   LCD_showString(char const *, int)
            ENTRY                   ADDRESS         REF BY
            =====                   =======         ======
-           LCD_showALetter(char)   D1C6            dsShowTime() (main)
+           LCD_showALetter(char)   D25E            dsShowTime() (main)
                                                    dsTimeConfig() (functions)
                                                    dsTimeConfig() (main)
                                                    showDHT() (functions)
@@ -443,21 +443,21 @@ DATA16_AN
                calls direct
     -------------------------------------------------------------------------
 <CODE> 1 (was CODE)
-  Relative segment, address: CF56 - CF97 (0x42 bytes), align: 1
+  Relative segment, address: CFD2 - D013 (0x42 bytes), align: 1
   Segment part 6.
            ENTRY                   ADDRESS         REF BY
            =====                   =======         ======
            LCD_showString(char const *, int)
-                                   CF56            showDHT() (functions)
+                                   CFD2            showDHT() (functions)
                                                    showDHT() (main)
                calls direct
     -------------------------------------------------------------------------
 <CODE> 1 (was CODE)
-  Relative segment, address: D1FE - D207 (0xa bytes), align: 1
+  Relative segment, address: D286 - D28F (0xa bytes), align: 1
   Segment part 7.             Intra module refs:   LCD_init()
            ENTRY                   ADDRESS         REF BY
            =====                   =======         ======
-           LCD_clear()             D1FE            dsTimeConfig() (functions)
+           LCD_clear()             D286            dsTimeConfig() (functions)
                                                    dsTimeConfig() (main)
                                                    main (main)
                                                    showDHT() (functions)
@@ -465,20 +465,20 @@ DATA16_AN
                calls direct
     -------------------------------------------------------------------------
 <CODE> 1 (was CODE)
-  Relative segment, address: D0D8 - D107 (0x30 bytes), align: 1
+  Relative segment, address: D154 - D183 (0x30 bytes), align: 1
   Segment part 8.
            ENTRY                   ADDRESS         REF BY
            =====                   =======         ======
-           LCD_init()              D0D8            init() (main)
+           LCD_init()              D154            init() (main)
                calls direct
     -------------------------------------------------------------------------
 <CODE> 1 (was CODE)
-  Relative segment, address: D138 - D163 (0x2c bytes), align: 1
+  Relative segment, address: D1B4 - D1DF (0x2c bytes), align: 1
   Segment part 9.
            ENTRY                   ADDRESS         REF BY
            =====                   =======         ======
            LCD_goto(unsigned char, unsigned char)
-                                   D138            dsShowTime() (main)
+                                   D1B4            dsShowTime() (main)
                                                    dsTimeConfig() (functions)
                                                    dsTimeConfig() (main)
                calls direct
@@ -657,7 +657,7 @@ DATA16_AN
     -------------------------------------------------------------------------
 DATA16_I
   Relative segment, address: 0206 - 0207 (0x2 bytes), align: 1
-  Segment part 43.            Intra module refs:   dht_get(unsigned char *, unsigned char *)
+  Segment part 44.            Intra module refs:   dht_get(unsigned char *, unsigned char *)
                                                    init()
            LOCAL                   ADDRESS         
            =====                   =======         
@@ -665,14 +665,14 @@ DATA16_I
     -------------------------------------------------------------------------
 DATA16_I
   Relative segment, address: 0208 - 0209 (0x2 bytes), align: 1
-  Segment part 45.            Intra module refs:   dht_get(unsigned char *, unsigned char *)
+  Segment part 46.            Intra module refs:   dht_get(unsigned char *, unsigned char *)
            LOCAL                   ADDRESS         
            =====                   =======         
            P1_OUT                  0208 
     -------------------------------------------------------------------------
 DATA16_I
   Relative segment, address: 020A - 020B (0x2 bytes), align: 1
-  Segment part 47.            Intra module refs:   dht_get(unsigned char *, unsigned char *)
+  Segment part 48.            Intra module refs:   dht_get(unsigned char *, unsigned char *)
                                                    dsTimeConfig()
            LOCAL                   ADDRESS         
            =====                   =======         
@@ -680,83 +680,87 @@ DATA16_I
     -------------------------------------------------------------------------
 DATA16_Z
   Relative segment, address: 021D - 021D (0x1 bytes), align: 0
-  Segment part 49.            Intra module refs:   showDHT()
+  Segment part 50.            Intra module refs:   main
+                                                   showDHT()
            LOCAL                   ADDRESS         
            =====                   =======         
            nhietdo                 021D 
     -------------------------------------------------------------------------
 DATA16_Z
   Relative segment, address: 021E - 021E (0x1 bytes), align: 0
-  Segment part 50.            Intra module refs:   showDHT()
+  Segment part 51.            Intra module refs:   main
+                                                   showDHT()
            LOCAL                   ADDRESS         
            =====                   =======         
            doam                    021E 
     -------------------------------------------------------------------------
 <CODE> 1 (was CODE)
-  Relative segment, address: C8F2 - C9ED (0xfc bytes), align: 1
-  Segment part 59.            Intra module refs:   showDHT()
+  Relative segment, address: C9F6 - CAF1 (0xfc bytes), align: 1
+  Segment part 60.            Intra module refs:   main
+                                                   showDHT()
            LOCAL                   ADDRESS         
            =====                   =======         
            dht_get(unsigned char *, unsigned char *)
-                                   C8F2 
+                                   C9F6 
                calls direct
     -------------------------------------------------------------------------
 <CODE> 1 (was CODE)
-  Relative segment, address: D074 - D0A5 (0x32 bytes), align: 1
-  Segment part 60.            Intra module refs:   dsInit()
+  Relative segment, address: D08C - D0BD (0x32 bytes), align: 1
+  Segment part 61.            Intra module refs:   dsInit()
            LOCAL                   ADDRESS         
            =====                   =======         
            I2C_USCI_Init(unsigned char)
-                                   D074 
+                                   D08C 
     -------------------------------------------------------------------------
 <CODE> 1 (was CODE)
-  Relative segment, address: CFD4 - D00F (0x3c bytes), align: 1
-  Segment part 61.            Intra module refs:   dsReadTime()
+  Relative segment, address: D014 - D04F (0x3c bytes), align: 1
+  Segment part 62.            Intra module refs:   dsReadTime()
            LOCAL                   ADDRESS         
            =====                   =======         
            I2C_USCI_Read_Byte(unsigned char)
-                                   CFD4 
+                                   D014 
     -------------------------------------------------------------------------
 <CODE> 1 (was CODE)
-  Relative segment, address: CDAE - CE05 (0x58 bytes), align: 1
-  Segment part 62.            Intra module refs:   dsInit()
+  Relative segment, address: CDD2 - CE29 (0x58 bytes), align: 1
+  Segment part 63.            Intra module refs:   dsInit()
+                                                   dsSetTime()
                                                    dsTimeConfig()
            LOCAL                   ADDRESS         
            =====                   =======         
            I2C_USCI_Write_Byte(unsigned char, unsigned char)
-                                   CDAE 
+                                   CDD2 
     -------------------------------------------------------------------------
 DATA16_C
-  Relative segment, address: C062 - C065 (0x4 bytes), align: 0
-  Segment part 34.            Intra module refs:   _weekdays(unsigned char)
+  Relative segment, address: C062 - C068 (0x7 bytes), align: 0
+  Segment part 34.            Intra module refs:   dsSetTime()
     -------------------------------------------------------------------------
 DATA16_C
-  Relative segment, address: C066 - C069 (0x4 bytes), align: 0
+  Relative segment, address: C069 - C06C (0x4 bytes), align: 0
   Segment part 35.            Intra module refs:   _weekdays(unsigned char)
     -------------------------------------------------------------------------
 DATA16_C
-  Relative segment, address: C06A - C06D (0x4 bytes), align: 0
+  Relative segment, address: C06D - C070 (0x4 bytes), align: 0
   Segment part 36.            Intra module refs:   _weekdays(unsigned char)
     -------------------------------------------------------------------------
 DATA16_C
-  Relative segment, address: C06E - C071 (0x4 bytes), align: 0
+  Relative segment, address: C071 - C074 (0x4 bytes), align: 0
   Segment part 37.            Intra module refs:   _weekdays(unsigned char)
     -------------------------------------------------------------------------
 DATA16_C
-  Relative segment, address: C072 - C075 (0x4 bytes), align: 0
+  Relative segment, address: C075 - C078 (0x4 bytes), align: 0
   Segment part 38.            Intra module refs:   _weekdays(unsigned char)
     -------------------------------------------------------------------------
 DATA16_C
-  Relative segment, address: C076 - C079 (0x4 bytes), align: 0
+  Relative segment, address: C079 - C07C (0x4 bytes), align: 0
   Segment part 39.            Intra module refs:   _weekdays(unsigned char)
     -------------------------------------------------------------------------
 DATA16_C
-  Relative segment, address: C07A - C07D (0x4 bytes), align: 0
+  Relative segment, address: C07D - C080 (0x4 bytes), align: 0
   Segment part 40.            Intra module refs:   _weekdays(unsigned char)
     -------------------------------------------------------------------------
 DATA16_C
-  Relative segment, address: C07E - C084 (0x7 bytes), align: 0
-  Segment part 41.            Intra module refs:   showDHT()
+  Relative segment, address: C081 - C084 (0x4 bytes), align: 0
+  Segment part 41.            Intra module refs:   _weekdays(unsigned char)
     -------------------------------------------------------------------------
 DATA16_C
   Relative segment, address: C085 - C08B (0x7 bytes), align: 0
@@ -764,11 +768,7 @@ DATA16_C
     -------------------------------------------------------------------------
 DATA16_C
   Relative segment, address: C08C - C092 (0x7 bytes), align: 0
-  Segment part 51.            Intra module refs:   dsShowTime()
-                                                   dsTimeConfig()
-           LOCAL                   ADDRESS         
-           =====                   =======         
-           _posiX                  C08C 
+  Segment part 43.            Intra module refs:   showDHT()
     -------------------------------------------------------------------------
 DATA16_C
   Relative segment, address: C093 - C099 (0x7 bytes), align: 0
@@ -776,7 +776,7 @@ DATA16_C
                                                    dsTimeConfig()
            LOCAL                   ADDRESS         
            =====                   =======         
-           _posiY                  C093 
+           _posiX                  C093 
     -------------------------------------------------------------------------
 DATA16_C
   Relative segment, address: C09A - C0A0 (0x7 bytes), align: 0
@@ -784,7 +784,7 @@ DATA16_C
                                                    dsTimeConfig()
            LOCAL                   ADDRESS         
            =====                   =======         
-           _symbolPosiY            C09A 
+           _posiY                  C09A 
     -------------------------------------------------------------------------
 DATA16_C
   Relative segment, address: C0A1 - C0A7 (0x7 bytes), align: 0
@@ -792,18 +792,26 @@ DATA16_C
                                                    dsTimeConfig()
            LOCAL                   ADDRESS         
            =====                   =======         
-           _symbol                 C0A1 
+           _symbolPosiY            C0A1 
+    -------------------------------------------------------------------------
+DATA16_C
+  Relative segment, address: C0A8 - C0AE (0x7 bytes), align: 0
+  Segment part 55.            Intra module refs:   dsShowTime()
+                                                   dsTimeConfig()
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           _symbol                 C0A8 
     -------------------------------------------------------------------------
 DATA16_C
   Relative segment, address: C00E - C01B (0xe bytes), align: 1
-  Segment part 55.            Intra module refs:   dsTimeConfig()
+  Segment part 56.            Intra module refs:   dsTimeConfig()
            LOCAL                   ADDRESS         
            =====                   =======         
            _maxVal                 C00E 
     -------------------------------------------------------------------------
 DATA16_Z
   Relative segment, address: 021F - 0225 (0x7 bytes), align: 0
-  Segment part 56.            Intra module refs:   dsReadTime()
+  Segment part 57.            Intra module refs:   dsReadTime()
                                                    dsTimeConfig()
            LOCAL                   ADDRESS         
            =====                   =======         
@@ -811,7 +819,7 @@ DATA16_Z
     -------------------------------------------------------------------------
 DATA16_Z
   Relative segment, address: 0226 - 022C (0x7 bytes), align: 0
-  Segment part 57.            Intra module refs:   dsReadTime()
+  Segment part 58.            Intra module refs:   dsReadTime()
                                                    dsShowTime()
                                                    dsTimeConfig()
            LOCAL                   ADDRESS         
@@ -819,102 +827,110 @@ DATA16_Z
            time10                  0226 
     -------------------------------------------------------------------------
 <CODE> 1 (was CODE)
-  Relative segment, address: D1B0 - D1C5 (0x16 bytes), align: 1
-  Segment part 63.            Intra module refs:   init()
+  Relative segment, address: D238 - D24D (0x16 bytes), align: 1
+  Segment part 64.            Intra module refs:   init()
            LOCAL                   ADDRESS         
            =====                   =======         
-           dsInit()                D1B0 
+           dsInit()                D238 
                calls direct
     -------------------------------------------------------------------------
 <CODE> 1 (was CODE)
-  Relative segment, address: CC14 - CC81 (0x6e bytes), align: 1
-  Segment part 64.            Intra module refs:   dsShowTime()
+  Relative segment, address: CBAE - CC1D (0x70 bytes), align: 1
+  Segment part 65.            Intra module refs:   init()
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           dsSetTime()             CBAE 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CC8E - CCFB (0x6e bytes), align: 1
+  Segment part 66.            Intra module refs:   dsShowTime()
                                                    dsTimeConfig()
            LOCAL                   ADDRESS         
            =====                   =======         
-           dsReadTime()            CC14 
+           dsReadTime()            CC8E 
                calls direct
     -------------------------------------------------------------------------
 <CODE> 1 (was CODE)
-  Relative segment, address: CAEA - CBA5 (0xbc bytes), align: 1
-  Segment part 66.            Intra module refs:   main
+  Relative segment, address: CAF2 - CBAD (0xbc bytes), align: 1
+  Segment part 68.            Intra module refs:   main
            LOCAL                   ADDRESS         
            =====                   =======         
-           dsShowTime()            CAEA 
+           dsShowTime()            CAF2 
                calls direct
     -------------------------------------------------------------------------
 <CODE> 1 (was CODE)
-  Relative segment, address: C0DC - C341 (0x266 bytes), align: 1
-  Segment part 68.            Intra module refs:   test()
+  Relative segment, address: C34A - C5AF (0x266 bytes), align: 1
+  Segment part 70.            Intra module refs:   test()
            LOCAL                   ADDRESS         
            =====                   =======         
-           dsTimeConfig()          C0DC 
+           dsTimeConfig()          C34A 
                calls direct
     -------------------------------------------------------------------------
 <CODE> 1 (was CODE)
-  Relative segment, address: CE06 - CE5B (0x56 bytes), align: 1
-  Segment part 67.            Intra module refs:   dsTimeConfig()
+  Relative segment, address: CE82 - CED7 (0x56 bytes), align: 1
+  Segment part 69.            Intra module refs:   dsTimeConfig()
            LOCAL                   ADDRESS         
            =====                   =======         
            _maxDayofMonth(unsigned char, unsigned char)
-                                   CE06 
+                                   CE82 
                calls direct
     -------------------------------------------------------------------------
 <CODE> 1 (was CODE)
-  Relative segment, address: CEB2 - CF03 (0x52 bytes), align: 1
-  Segment part 65.            Intra module refs:   dsShowTime()
+  Relative segment, address: CF80 - CFD1 (0x52 bytes), align: 1
+  Segment part 67.            Intra module refs:   dsShowTime()
                                                    dsTimeConfig()
            LOCAL                   ADDRESS         
            =====                   =======         
            _weekdays(unsigned char)
-                                   CEB2 
+                                   CF80 
     -------------------------------------------------------------------------
 <CODE> 1 (was CODE)
-  Relative segment, address: C5A8 - C6ED (0x146 bytes), align: 1
-  Segment part 69.            Intra module refs:   init()
+  Relative segment, address: C5B0 - C6F5 (0x146 bytes), align: 1
+  Segment part 71.            Intra module refs:   init()
            LOCAL                   ADDRESS         
            =====                   =======         
-           Select_Clock(CLOCK)     C5A8 
+           Select_Clock(CLOCK)     C5B0 
     -------------------------------------------------------------------------
 DATA16_Z
   Relative segment, address: 022D - 022D (0x1 bytes), align: 0
-  Segment part 58.            Intra module refs:   main
+  Segment part 59.            Intra module refs:   main
                                                    test()
            LOCAL                   ADDRESS         
            =====                   =======         
-           _isInterrupt            022D 
+           _isInterrupted          022D 
     -------------------------------------------------------------------------
 <CODE> 1 (was CODE)
-  Relative segment, address: CC82 - CCED (0x6c bytes), align: 1
-  Segment part 70.            Intra module refs:   main
+  Relative segment, address: CC1E - CC8D (0x70 bytes), align: 1
+  Segment part 72.            Intra module refs:   main
            LOCAL                   ADDRESS         
            =====                   =======         
-           init()                  CC82 
+           init()                  CC1E 
                calls direct
     -------------------------------------------------------------------------
 <CODE> 1 (was CODE)
-  Relative segment, address: D010 - D041 (0x32 bytes), align: 1
-  Segment part 72.            Intra module refs:   test()::??INTVEC 4
+  Relative segment, address: D122 - D153 (0x32 bytes), align: 1
+  Segment part 74.            Intra module refs:   test()::??INTVEC 4
            LOCAL                   ADDRESS         
            =====                   =======         
-           test()                  D010 
+           test()                  D122 
                interrupt function
                calls direct
     -------------------------------------------------------------------------
 <CODE> 1 (was CODE)
-  Relative segment, address: C6EE - C7EF (0x102 bytes), align: 1
-  Segment part 71.            Intra module refs:   test()
+  Relative segment, address: C7F8 - C8F9 (0x102 bytes), align: 1
+  Segment part 73.            Intra module refs:   test()
            LOCAL                   ADDRESS         
            =====                   =======         
-           showDHT()               C6EE 
+           showDHT()               C7F8 
                calls direct
     -------------------------------------------------------------------------
 <CODE> 1 (was CODE)
-  Relative segment, address: D180 - D197 (0x18 bytes), align: 1
-  Segment part 73.
+  Relative segment, address: D1E0 - D203 (0x24 bytes), align: 1
+  Segment part 75.
            ENTRY                   ADDRESS         REF BY
            =====                   =======         ======
-           main                    D180            Segment part 19 (?cstart)
+           main                    D1E0            Segment part 19 (?cstart)
                calls direct
     -------------------------------------------------------------------------
 INTVEC
@@ -925,16 +941,16 @@ INTVEC
            test()::??INTVEC 4      FFE4 
     -------------------------------------------------------------------------
 DATA16_ID
-  Relative segment, address: C0AE - C0AF (0x2 bytes), align: 1
-  Segment part 44.            Intra module refs:   P1_DIR
+  Relative segment, address: C0B6 - C0B7 (0x2 bytes), align: 1
+  Segment part 45.            Intra module refs:   P1_DIR
     -------------------------------------------------------------------------
 DATA16_ID
-  Relative segment, address: C0B0 - C0B1 (0x2 bytes), align: 1
-  Segment part 46.            Intra module refs:   P1_OUT
+  Relative segment, address: C0B8 - C0B9 (0x2 bytes), align: 1
+  Segment part 47.            Intra module refs:   P1_OUT
     -------------------------------------------------------------------------
 DATA16_ID
-  Relative segment, address: C0B2 - C0B3 (0x2 bytes), align: 1
-  Segment part 48.            Intra module refs:   P1_IN
+  Relative segment, address: C0BA - C0BB (0x2 bytes), align: 1
+  Segment part 49.            Intra module refs:   P1_IN
 
     *************************************************************************
 
@@ -944,14 +960,14 @@ DATA16_ID
   SEGMENTS IN THE MODULE
   ======================
 <CODE> 1 (was CODE)
-  Relative segment, address: D216, align: 1
+  Relative segment, address: D29E, align: 1
   Segment part 0.
            ENTRY                   ADDRESS         REF BY
            =====                   =======         ======
-           _exit                   D216            exit (?clibexit)
+           _exit                   D29E            exit (?clibexit)
     -------------------------------------------------------------------------
 <CODE> 1 (was CODE)
-  Relative segment, address: D216 - D219 (0x4 bytes), align: 1
+  Relative segment, address: D29E - D2A1 (0x4 bytes), align: 1
   Segment part 6.             Intra module refs:   _exit
 
     -------------------------------------------------------------------------
@@ -960,11 +976,11 @@ DATA16_ID
   SEGMENTS IN THE MODULE
   ======================
 <CODE> 1 (was CODE)
-  Relative segment, address: D212 - D215 (0x4 bytes), align: 1
+  Relative segment, address: D29A - D29D (0x4 bytes), align: 1
   Segment part 2.
            ENTRY                   ADDRESS         REF BY
            =====                   =======         ======
-           exit                    D212            Segment part 19 (?cstart)
+           exit                    D29A            Segment part 19 (?cstart)
                calls direct
 
     -------------------------------------------------------------------------
@@ -973,13 +989,13 @@ DATA16_ID
   SEGMENTS IN THE MODULE
   ======================
 <CODE> 1 (was CODE)
-  Relative segment, address: D21E - D21F (0x2 bytes), align: 1
+  Relative segment, address: D2A6 - D2A7 (0x2 bytes), align: 1
   Segment part 0.
            ENTRY                   ADDRESS         REF BY
            =====                   =======         ======
-           __exit                  D21E            Segment part 6 (?_exit)
+           __exit                  D2A6            Segment part 6 (?_exit)
                                                    _exit (?_exit)
-           ?C_EXIT                 D21E 
+           ?C_EXIT                 D2A6 
 
     -------------------------------------------------------------------------
   LIBRARY MODULE, NAME : ?cstart
@@ -999,27 +1015,27 @@ DATA16_I
   Segment part 3.
     -------------------------------------------------------------------------
 DATA16_ID
-  Relative segment, address: C0B4, align: 1
+  Relative segment, address: C0BC, align: 1
   Segment part 4.
     -------------------------------------------------------------------------
 CSTART
-  Relative segment, address: C0B4 - C0B7 (0x4 bytes), align: 1
+  Relative segment, address: C0BC - C0BF (0x4 bytes), align: 1
   Segment part 9.
            ENTRY                   ADDRESS         REF BY
            =====                   =======         ======
-           __program_start         C0B4            ?reset_vector (?reset_vector)
+           __program_start         C0BC            ?reset_vector (?reset_vector)
                                                    Absolute parts (?ABS_ENTRY_MOD)
-           ?cstart_begin           C0B4 
+           ?cstart_begin           C0BC 
     -------------------------------------------------------------------------
 CSTART
-  Relative segment, address: C0B8 - C0C3 (0xc bytes), align: 1
+  Relative segment, address: C0C0 - C0CB (0xc bytes), align: 1
   Segment part 14.
            ENTRY                   ADDRESS         REF BY
            =====                   =======         ======
-           ?cstart_init_zero       C0B8            Temp (functions)
+           ?cstart_init_zero       C0C0            Temp (functions)
                                                    Temp (main)
-                                                   _isInterrupt (functions)
-                                                   _isInterrupt (main)
+                                                   _isInterrupted (functions)
+                                                   _isInterrupted (main)
                                                    doam (functions)
                                                    doam (main)
                                                    nhietdo (functions)
@@ -1028,11 +1044,11 @@ CSTART
                                                    time10 (main)
     -------------------------------------------------------------------------
 CSTART
-  Relative segment, address: C0C4 - C0D3 (0x10 bytes), align: 1
+  Relative segment, address: C0CC - C0DB (0x10 bytes), align: 1
   Segment part 15.
            ENTRY                   ADDRESS         REF BY
            =====                   =======         ======
-           ?cstart_init_copy       C0C4            P1_DIR (functions)
+           ?cstart_init_copy       C0CC            P1_DIR (functions)
                                                    P1_DIR (main)
                                                    P1_IN (functions)
                                                    P1_IN (main)
@@ -1040,12 +1056,12 @@ CSTART
                                                    P1_OUT (main)
     -------------------------------------------------------------------------
 CSTART
-  Relative segment, address: C0D4 - C0DB (0x8 bytes), align: 1
+  Relative segment, address: C0DC - C0E3 (0x8 bytes), align: 1
   Segment part 19.            Intra module refs:   Segment part 9
            ENTRY                   ADDRESS         REF BY
            =====                   =======         ======
-           ?cstart_call_main       C0D4 
-           ?cstart_end             C0DC 
+           ?cstart_call_main       C0DC 
+           ?cstart_end             C0E4 
 
     -------------------------------------------------------------------------
   LIBRARY MODULE, NAME : ?reset_vector
@@ -1065,19 +1081,19 @@ RESET
   SEGMENTS IN THE MODULE
   ======================
 <CODE> 1 (was CODE)
-  Relative segment, address: D208 - D209 (0x2 bytes), align: 1
+  Relative segment, address: D290 - D291 (0x2 bytes), align: 1
   Segment part 4.
            ENTRY                   ADDRESS         REF BY
            =====                   =======         ======
-           ?Epilogue4              D208            dsTimeConfig() (functions)
+           ?Epilogue4              D290            dsTimeConfig() (functions)
                                                    dsTimeConfig() (main)
     -------------------------------------------------------------------------
 <CODE> 1 (was CODE)
-  Relative segment, address: D20A - D211 (0x8 bytes), align: 1
+  Relative segment, address: D292 - D299 (0x8 bytes), align: 1
   Segment part 5.             Intra module refs:   ?Epilogue4
            ENTRY                   ADDRESS         REF BY
            =====                   =======         ======
-           ?Epilogue3              D20A            LCD_showString(char const *, int) (LCD16x2)
+           ?Epilogue3              D292            LCD_showString(char const *, int) (LCD16x2)
                                                    dht_get(unsigned char *, unsigned char *) (functions)
                                                    dht_get(unsigned char *, unsigned char *) (main)
                                                    dsShowTime() (main)
@@ -1088,23 +1104,23 @@ RESET
   SEGMENTS IN THE MODULE
   ======================
 <CODE> 1 (was CODE)
-  Relative segment, address: D042 - D045 (0x4 bytes), align: 1
+  Relative segment, address: D0F0 - D0F3 (0x4 bytes), align: 1
   Segment part 0.
            ENTRY                   ADDRESS         REF BY
            =====                   =======         ======
-           ?Mul8                   D042            dsShowTime() (main)
+           ?Mul8                   D0F0            dsShowTime() (main)
                                                    dsTimeConfig() (functions)
                                                    dsTimeConfig() (main)
                                                    showDHT() (functions)
                                                    showDHT() (main)
     -------------------------------------------------------------------------
 <CODE> 1 (was CODE)
-  Relative segment, address: D046 - D073 (0x2e bytes), align: 1
+  Relative segment, address: D0F4 - D121 (0x2e bytes), align: 1
   Segment part 1.             Intra module refs:   ?Mul8
            ENTRY                   ADDRESS         REF BY
            =====                   =======         ======
-           ?Mul16                  D046 
-           ?Mul16to32u             D046 
+           ?Mul16                  D0F4 
+           ?Mul16to32u             D0F4 
 
     -------------------------------------------------------------------------
   LIBRARY MODULE, NAME : ?DivMod816u
@@ -1112,22 +1128,22 @@ RESET
   SEGMENTS IN THE MODULE
   ======================
 <CODE> 1 (was CODE)
-  Relative segment, address: D164 - D167 (0x4 bytes), align: 1
+  Relative segment, address: D204 - D207 (0x4 bytes), align: 1
   Segment part 0.
            ENTRY                   ADDRESS         REF BY
            =====                   =======         ======
-           ?DivMod8u               D164            dsShowTime() (main)
+           ?DivMod8u               D204            dsShowTime() (main)
                                                    dsTimeConfig() (functions)
                                                    dsTimeConfig() (main)
                                                    showDHT() (functions)
                                                    showDHT() (main)
     -------------------------------------------------------------------------
 <CODE> 1 (was CODE)
-  Relative segment, address: D168 - D17F (0x18 bytes), align: 1
+  Relative segment, address: D208 - D21F (0x18 bytes), align: 1
   Segment part 1.             Intra module refs:   ?DivMod8u
            ENTRY                   ADDRESS         REF BY
            =====                   =======         ======
-           ?DivMod16u              D168            ?DivMod16s (?DivMod816s)
+           ?DivMod16u              D208            ?DivMod16s (?DivMod816s)
                                                    dsTimeConfig() (functions)
                                                    dsTimeConfig() (main)
 
@@ -1137,11 +1153,11 @@ RESET
   SEGMENTS IN THE MODULE
   ======================
 <CODE> 1 (was CODE)
-  Relative segment, address: D108 - D137 (0x30 bytes), align: 1
+  Relative segment, address: D184 - D1B3 (0x30 bytes), align: 1
   Segment part 1.
            ENTRY                   ADDRESS         REF BY
            =====                   =======         ======
-           ?DivMod16s              D108            _maxDayofMonth(unsigned char, unsigned char) (functions)
+           ?DivMod16s              D184            _maxDayofMonth(unsigned char, unsigned char) (functions)
                                                    _maxDayofMonth(unsigned char, unsigned char) (main)
                                                    dsReadTime() (functions)
                                                    dsReadTime() (main)
@@ -1157,11 +1173,11 @@ RESET
   SEGMENTS IN THE MODULE
   ======================
 <CODE> 1 (was CODE)
-  Relative segment, address: D1E6 - D1F1 (0xc bytes), align: 1
+  Relative segment, address: D26E - D279 (0xc bytes), align: 1
   Segment part 0.
            ENTRY                   ADDRESS         REF BY
            =====                   =======         ======
-           ?ShiftLeft16            D1E6            dht_get(unsigned char *, unsigned char *) (functions)
+           ?ShiftLeft16            D26E            dht_get(unsigned char *, unsigned char *) (functions)
                                                    dht_get(unsigned char *, unsigned char *) (main)
 
     -------------------------------------------------------------------------
@@ -1170,11 +1186,11 @@ RESET
   SEGMENTS IN THE MODULE
   ======================
 <CODE> 1 (was CODE)
-  Relative segment, address: D1F2 - D1FD (0xc bytes), align: 1
+  Relative segment, address: D27A - D285 (0xc bytes), align: 1
   Segment part 1.
            ENTRY                   ADDRESS         REF BY
            =====                   =======         ======
-           ?ShiftRight16s          D1F2            _send2LCD(char, int) (LCD16x2)
+           ?ShiftRight16s          D27A            _send2LCD(char, int) (LCD16x2)
 
     -------------------------------------------------------------------------
   LIBRARY MODULE, NAME : ?memcpy
@@ -1182,11 +1198,11 @@ RESET
   SEGMENTS IN THE MODULE
   ======================
 <CODE> 1 (was CODE)
-  Relative segment, address: D198 - D1AF (0x18 bytes), align: 1
+  Relative segment, address: D220 - D237 (0x18 bytes), align: 1
   Segment part 2.
            ENTRY                   ADDRESS         REF BY
            =====                   =======         ======
-           memcpy                  D198            __data16_memcpy (?memzero)
+           memcpy                  D220            __data16_memcpy (?memzero)
 
     -------------------------------------------------------------------------
   LIBRARY MODULE, NAME : ?memzero
@@ -1194,18 +1210,18 @@ RESET
   SEGMENTS IN THE MODULE
   ======================
 <CODE> 1 (was CODE)
-  Relative segment, address: D1D6 - D1E5 (0x10 bytes), align: 1
+  Relative segment, address: D24E - D25D (0x10 bytes), align: 1
   Segment part 2.
            ENTRY                   ADDRESS         REF BY
            =====                   =======         ======
-           __data16_memzero        D1D6            ?cstart_init_zero (?cstart)
+           __data16_memzero        D24E            ?cstart_init_zero (?cstart)
     -------------------------------------------------------------------------
 <CODE> 1 (was CODE)
-  Relative segment, address: D21A - D21D (0x4 bytes), align: 1
+  Relative segment, address: D2A2 - D2A5 (0x4 bytes), align: 1
   Segment part 3.
            ENTRY                   ADDRESS         REF BY
            =====                   =======         ======
-           __data16_memcpy         D21A            ?cstart_init_copy (?cstart)
+           __data16_memcpy         D2A2            ?cstart_init_copy (?cstart)
                calls direct
 
 
@@ -1234,10 +1250,10 @@ DATA16_I                               0200 - 020B               C   rel    1
 DATA16_Z                               020C - 022D              22   rel    1
 CSTACK                                 03B0 - 03FF              50   rel    1
 DATA16_AN                              10F8 - 10FF               8   rel    0
-DATA16_C                               C000 - C0A7              A8   rel    1
-DATA16_ID                              C0A8 - C0B3               C   rel    1
-CSTART                                 C0B4 - C0DB              28   rel    1
-<CODE> 1                               C0DC - D21F            1144   rel    1
+DATA16_C                               C000 - C0AE              AF   rel    1
+DATA16_ID                              C0B0 - C0BB               C   rel    1
+CSTART                                 C0BC - C0E3              28   rel    1
+<CODE> 1                               C0E4 - D2A7            11C4   rel    1
 INTVEC                                 FFE0 - FFE5               6   com    1
 RESET                                  FFFE - FFFF               2   rel    1
 
@@ -1247,9 +1263,9 @@ RESET                                  FFFE - FFFF               2   rel    1
                 *                                      *
                 ****************************************
 
- 4 468 bytes of CODE  memory
+ 4 596 bytes of CODE  memory
    126 bytes of DATA  memory (+ 32 absolute )
-   180 bytes of CONST memory
+   187 bytes of CONST memory
 
 Errors: none
 Warnings: 1

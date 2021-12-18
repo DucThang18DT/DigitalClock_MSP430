@@ -24,7 +24,7 @@
     static union reg* P1_DIR=(union reg*)0x22;  //khai bao dia chi o nho P1
     static union reg* P1_OUT=(union reg*)0x21;
     static union reg* P1_SEL=(union reg*)0x26;
-    static union reg* P1_IN=(union reg*)0x20;
+    static union reg* P1_IN=(union reg*)0x20; 
     
     /// LCD's Pin
     #define     LCD_PORT        P2OUT
